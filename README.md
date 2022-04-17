@@ -1,2 +1,2 @@
 # Recharts
-Created with CodeSandbox
+<p>Created with CodeSandbox,React,Recharts</p>
