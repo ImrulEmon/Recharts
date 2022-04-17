@@ -11,6 +11,7 @@ import {
 } from "recharts";
 import MyLineChart from "./components/MyLineChart/MyLineChart";
 import MyPieChart from "./components/MyPieChart/MyPieChart";
+import SocialPie from "./components/SocialPie/SocialPie";
 export default function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ export default function App() {
       <h2>Imrul Emon</h2>
       <MyLineChart></MyLineChart>
       <MyPieChart></MyPieChart>
+      <SocialPie></SocialPie>
     </div>
   );
 }
