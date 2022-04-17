@@ -26,7 +26,7 @@ const MyPieChart = () => {
   ];
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
   return (
-    <PieChart width={400} height={400}>
+    <PieChart width={400} height={400} className="mx-auto my-5 container-fluid">
       <Pie
         dataKey="value"
         isAnimationActive={true}

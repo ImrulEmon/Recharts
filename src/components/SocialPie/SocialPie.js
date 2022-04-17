@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
-
+import "./social.css";
 const data = [
   { name: "Facebook", value: 2910 },
   { name: "YouTube", value: 2562 },
@@ -43,24 +43,24 @@ const COLORS = [
 
 export default function SocialPie() {
   return (
-    <PieChart width={400} height={400}>
+    <PieChart width={400} height={400} className="mx-auto mb-5">
       <Pie
         data={data}
-        cx={200}
-        cy={200}
-        label
+        cx="50%"
+        cy="50%"
         // labelLine={false}
         // label={renderCustomizedLabel}
         outerRadius={80}
         fill="#8884d8"
         dataKey="value"
+        label
       >
         {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
-      <Tooltip />
       <Legend />
+      <Tooltip />
     </PieChart>
   );
 }

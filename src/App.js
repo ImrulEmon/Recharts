@@ -14,12 +14,14 @@ import MyPieChart from "./components/MyPieChart/MyPieChart";
 import SocialPie from "./components/SocialPie/SocialPie";
 export default function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <h1>Simple Chart</h1>
       <h2>Imrul Emon</h2>
-      <MyLineChart></MyLineChart>
+
       <MyPieChart></MyPieChart>
       <SocialPie></SocialPie>
+
+      {/* <MyLineChart></MyLineChart> */}
     </div>
   );
 }
